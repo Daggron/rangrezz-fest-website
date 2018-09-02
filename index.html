@@ -19,6 +19,13 @@
     <link id="theme" href="css/theme/theme-red-2.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script type="text/javascript">
+      $(window).on('load',function () {
+        $('.preloader').delay(100).fadeOut('slow');
+      });
+      </script>
   </head>
   <style>
     #hlo{
@@ -41,10 +48,27 @@
   </style>
   <body class="appear-animate">
     <!-- Page Loader Start-->
-    <div class="page-loader">
-      <div class="loader">Loading</div><span class="loader-text alt-font">Welcome to Rangrezz</span>
+    <div class="preloader">
+      <div class="arc" style="--ang: 0deg;"></div>
+      <div class="arc" style="--ang: 20deg;"></div>
+      <div class="arc" style="--ang: 40deg;"></div>
+      <div class="arc" style="--ang: 60deg;"></div>
+      <div class="arc" style="--ang: 80deg;"></div>
+      <div class="arc" style="--ang: 100deg;"></div>
+      <div class="arc" style="--ang: 120deg;"></div>
+      <div class="arc" style="--ang: 140deg;"></div>
+      <div class="arc" style="--ang: 160deg;"></div>
+      <div class="arc" style="--ang: 180deg;"></div>
+      <div class="arc" style="--ang: 200deg;"></div>
+      <div class="arc" style="--ang: 220deg;"></div>
+      <div class="arc" style="--ang: 240deg;"></div>
+      <div class="arc" style="--ang: 260deg;"></div>
+      <div class="arc" style="--ang: 280deg;"></div>
+      <div class="arc" style="--ang: 300deg;"></div>
+      <div class="arc" style="--ang: 320deg;"></div>
+      <div class="arc" style="--ang: 340deg;"></div>
     </div>
-    <!--Page Lader End-->
+        <!--Page Lader End-->
     <div id="top"></div>
     <!-- Navigation panel-->
     <nav class="main-nav white transparent stick-fixed">
@@ -72,7 +96,7 @@
     <section id="hero" class="full-screen">
       <!--Parallax image-->
 
-	<div id="particle-ground" data-background="img/full-width/bg-21.jpg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-10"></div>
+	<div id="particles-js" data-background="img/full-width/bg-21.jpg" data-top="transform: translate3d(0px, 0px, 0px)" data-top-bottom="transform: translate3d(0px, -200px, 0px)" data-anchor-target="#hero" class="parallax parallax-hero full-screen bg-dark-10"></div>
       <div class="hero-content">
 
         <div class="hero-content-inner">
@@ -83,7 +107,7 @@
                 <img src="img/full-width/Logo.png" style="height:20%;width:25%;padding: 0px;border:0px;margin: 0px;">
             <div id="timer"></div>
             </div>
-          <div data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-2 wow fadeInDown" style="padding: 0px;border: 0px;margin-bottom: 0px">Where We Live And <br>Breathe Theatre</div>
+          <div id="tagline"data-wow-delay="0.5s" data-wow-duration="3s" class="hs-line-2 wow fadeInDown" style="padding: 0px;border: 0px;margin-bottom: 0px">Where We Live And <br>Breathe Theatre</div>
             <div data-effect="fadeInUp" class="mt-30 animate-e" style="margin-top: 20px"><a href="#" class="scroll btn btn-coffee btn-border-w btn-round btn-medium"><span>Register Here</span></a><span>&nbsp; &nbsp;</span></div>
      </div>
 
@@ -130,7 +154,7 @@ Stay tuned for further details.</p>
 
           <div class="timeline__item">
             <h2 class="timeline__title">Maiores pariatur eos at.</h2>
-            <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+            <img class="timeline__title" src="img/ninja1.jpg" height="180px" width="auto"></img>
             <p class="timeline__blurb">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, dolorum?</p>
           </div>
           <div class="timeline__item">
@@ -139,12 +163,12 @@ Stay tuned for further details.</p>
 
           <div class="timeline__item">
             <h2 class="timeline__title">Maiores pariatur eos at.</h2>
-            <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+            <img class="timeline__title" src="img/nina.JPG" height="180px" width="auto"></img>
             <p class="timeline__blurb">Possimus sit, atque quia quas mollitia accusamus error fuga dignissimos?</p>
           </div>
           <div class="timeline__item">
             <h2 class="timeline__title">Sunt exercitationem corrupti placeat.</h2>
-                <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+                <img class="timeline__title" src="img/_MG_0177.JPG" height="180px" width="auto"></img>
             <p class="timeline__blurb">Neque tempore ipsum voluptatem, veniam ullam amet corrupti obcaecati laboriosam!</p>
           </div>
           <div class="timeline__item">
@@ -152,7 +176,7 @@ Stay tuned for further details.</p>
           </div>
           <div class="timeline__item">
             <h2 class="timeline__title">Maiores pariatur eos at.</h2>
-                <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+                <img class="timeline__title" src="img/DSC_0626.JPG" height="180px" width="auto"></img>
             <p class="timeline__blurb">Atque deleniti quaerat labore quisquam, distinctio adipisci explicabo dicta in.</p>
           </div>
 
@@ -160,31 +184,31 @@ Stay tuned for further details.</p>
 
           <div class="timeline__item">
             <h3 class="timeline__title">Id doloremque dolor tempore.</h2>
-                <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+                <img class="timeline__title" src="img/ikka.JPG" height="180px" width="auto"></img>
             <p class="timeline__blurb">Veritatis eligendi a porro provident, modi excepturi delectus explicabo ex.</p>
           </div>
+            <div class="timeline__item">
+                <h2 class="timeline__title">Sizzling Performances by Stars</h2>
+            </div>
           <div class="timeline__item">
             <h3 class="timeline__title">Vel praesentium deserunt nobis?</h2>
-                <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+                <img class="timeline__title" src="img/Dj%20wali%20behan%202k16.JPG" height="180px" width="auto"></img>
             <p class="timeline__blurb">Ratione minima dicta veniam excepturi aperiam et voluptas a numquam.</p>
           </div>
+
           <div class="timeline__item">
             <h3 class="timeline__title">Reiciendis consequatur excepturi amet?</h2>
-                <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+                <img class="timeline__title" src="img/winner%20log%202k16.JPG" height="180px" width="auto"></img>
             <p class="timeline__blurb">Saepe porro mollitia officiis blanditiis reprehenderit maxime sapiente odio ipsam.</p>
           </div>
 
-          <h2 class="timeline__item timeline__item--year">2008</h2>
-
+            <div class="timeline__item">
+                <h2 class="timeline__title">Repellendus nostrum alias odit.</h2>
+            </div>
           <div class="timeline__item">
             <h3 class="timeline__title">Vel dolor expedita reiciendis?</h2>
-                <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
+                <img class="timeline__title" src="img/2lakh%20ki%20party.JPG" height="180px" width="auto"></img>
             <p class="timeline__blurb">Aut exercitationem modi dolore vitae unde nisi reprehenderit, maxime sint.</p>
-          </div>
-          <div class="timeline__item">
-            <h3 class="timeline__title">Voluptates, ut? Assumenda, laborum?</h2>
-                <img class="timeline__title" src="img/t1.jpg" height="180px" width="auto"></img>
-            <p class="timeline__blurb">Amet, voluptate a! Minima, modi! Aut, voluptas! Voluptas, minima eum?</p>
           </div>
 
           <h2 class="timeline__item timeline__item--year">1985</h2>
